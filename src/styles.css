@@ -1,0 +1,61 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: white;
+  background: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.buttons {
+  rotate: 90;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 50px;
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
+
+.button {
+  background-color: #111;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: #636262;
+}
+
+.button:active {
+  background-color: #222;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 50px;
+  text-align: center;
+}
